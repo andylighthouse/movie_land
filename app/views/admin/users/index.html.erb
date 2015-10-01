@@ -1,0 +1,26 @@
+<h1>All Users</h1>
+<hr>
+<table>
+  <tr>
+    <th>User name</th>
+    <th>Email</th>
+    <th>Created on</th>
+    <th>Updated on</th>
+  </tr>
+<%@users.each do |user|%>
+ <tr>
+    <td><%= link_to user.full_name, new_user_path %></td>
+    <td><%= user.email %></td>
+    <td><%= formatted_date(user.created_at) %></td>
+    <td><%= formatted_date(user.updated_at) %></td>
+    <td><%= link_to "Edit", edit_admin_user_path(user) %></td>
+    <td><%= link_to "Delete", admin_user_path(user), method: :delete, data: { confirm: "You sure?" } %></td> 
+  </tr>
+<%end%>
+</table>
+<br>
+<%= link_to "Back to all movies", movies_path %>
+<hr>
+
+
+<%=link_to "Create User", new_admin_user_path %>
