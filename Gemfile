@@ -2,6 +2,8 @@ source 'https://rubygems.org'
 
 gem "rmagick"
 
+gem 'kaminari'
+
 gem 'carrierwave'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
