@@ -1,3 +1,21 @@
+
+<%= form_tag "/", method: 'get' do %>
+
+  <p>
+
+  <%= text_field_tag 'title', nil, placeholder: 'Enter title...'%>
+
+  <%= text_field_tag 'director', nil, placeholder: 'Enter director...'%>
+
+  <%= select_tag(:runtime_in_minutes, options_for_select(@options)) %>
+
+  <%= submit_tag 'Search'%>
+  </p>
+
+<% end %>
+
+
+
 <h1>Rotten Mangoes</h1>
 
 <%= link_to "Submit a movie!", new_movie_path %>
@@ -7,7 +25,7 @@
   <%= link_to image_tag(movie.image.versions[:thumb]), movie_path(movie) %>
   <% end %>
   <h2><%= link_to movie.title, movie_path(movie) %></h2>
-    <h3><%= movie.release_date %></h3>
+    <h3><%=formatted_date(movie.release_date) %></h3>
     <h4>Dir. <%= movie.director %> | <%= movie.runtime_in_minutes %> minutes</h4>
     <p><%= movie.description %></p>
     <hr>

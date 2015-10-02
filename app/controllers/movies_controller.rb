@@ -1,7 +1,19 @@
 class MoviesController < ApplicationController
   
   def index
-    @movies = Movie.all
+    # binding.pry
+    @options = [["",""], ["Under 90 minutes", 0], ["Between 90 and 120 minutes", 1], ["Over 120 minutes", 2]]
+    # @movies = Movie.all
+    @movies = Movie.search_by_title(params[:title])
+    @movies = @movies.search_by_director(params[:director])
+    case params[:runtime_in_minutes]
+    when "0"
+      @movies = @movies.less_than_90
+    when "1"
+      @movies = @movies.between_90_and_120_minutes
+    when "2"
+      @movies = @movies.greater_than_120_minutes
+    end
   end
 
   def show
@@ -36,11 +48,12 @@ class MoviesController < ApplicationController
     end
   end
 
-    def destroy
-    @movie = Movie.find(params[:id])
-    @movie.destroy
-    redirect_to movies_path
-    end
+  def destroy
+  @movie = Movie.find(params[:id])
+  @movie.destroy
+  redirect_to movies_path
+  end
+
 
   protected
 

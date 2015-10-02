@@ -10,7 +10,7 @@
 
 <%@users.each do |user|%>
   <tr>
-    <td><%= link_to user.full_name, new_user_path %></td>
+    <td><%=user.full_name%></td>
     <td><%= user.email %></td>
     <td><%= formatted_date(user.created_at) %></td>
     <td><%= formatted_date(user.updated_at) %></td>
