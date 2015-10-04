@@ -1,7 +1,7 @@
 Using Rails to make a movie reviewing app.
 Installing the correct versions and gemfiles.
 Using Sqlite as database.
-Database migrations.
+Database migrations and associations.
 Using scope to query for the search bar.
 Admin and normal user logins.
 Learning the MVC model, seperation of concerns.
