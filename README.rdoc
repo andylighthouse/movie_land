@@ -1,13 +1,13 @@
-Using Rails to make a movie reviewing app
-Installing the correct versions and gemfiles
-Using Sqlite as database
-Database migrations
-Using scope to query for the search bar
-Admin and normal user logins
-Learning the MVC model, seperation of concerns
-Using flashes to display messages
-Using strong params for secruity
-Working with bcrypt gem
-Using imageuploader
+Using Rails to make a movie reviewing app.
+Installing the correct versions and gemfiles.
+Using Sqlite as database.
+Database migrations.
+Using scope to query for the search bar.
+Admin and normal user logins.
+Learning the MVC model, seperation of concerns.
+Using flashes to display messages.
+Using strong params for secruity.
+Working with bcrypt gem.
+Using imageuploader.
 Work in progress....
 
