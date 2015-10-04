@@ -1,28 +1,13 @@
-== README
+Using Rails to make a movie reviewing app
+Installing the correct versions and gemfiles
+Using Sqlite as database
+Database migrations
+Using scope to query for the search bar
+Admin and normal user logins
+Learning the MVC model, seperation of concerns
+Using flashes to display messages
+Using strong params for secruity
+Working with bcrypt gem
+Using imageuploader
+Work in progress....
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
