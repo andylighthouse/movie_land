@@ -4,10 +4,9 @@ Using Sqlite as database.
 Database migrations and associations.
 Using scope to query for the search bar.
 Admin and normal user logins.
-Learning the MVC model, seperation of concerns.
+Learning the MVC model, separation of concerns.
 Using flashes to display messages.
-Using strong params for secruity.
+Using strong params for security.
 Working with bcrypt gem.
-Using imageuploader.
+Using image uploader.
 Work in progress....
-
